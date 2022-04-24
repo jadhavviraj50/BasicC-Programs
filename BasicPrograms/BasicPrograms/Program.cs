@@ -8,7 +8,7 @@ namespace BasicPrograms
             
             while(true)
             {
-                Console.WriteLine("Select Number\n1)Leap Year \n2)Even odd\n3)FlipCoinPercentage");
+                Console.WriteLine("Select Number\n1)Leap Year \n2)Even odd\n3)FlipCoinPercentage\n4)HarmonicNumber");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
@@ -23,6 +23,10 @@ namespace BasicPrograms
                     case 3:
                         FlipCoin coin = new FlipCoin();
                         coin.flipCoinPercentage();
+                        break;
+                    case 4:
+                        HarmonicNumber harmonic = new HarmonicNumber();
+                        harmonic.harmonicNumber();
                         break;
                     default:
                         Console.WriteLine("Wrong Input");
