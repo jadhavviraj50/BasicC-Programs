@@ -8,7 +8,7 @@ namespace BasicPrograms
             
             while(true)
             {
-                Console.WriteLine("Select Number\n1)Leap Year \n2)Even odd\n3)FlipCoinPercentage\n4)HarmonicNumber");
+                Console.WriteLine("Select Number\n1)Leap Year \n2)Even odd\n3)FlipCoinPercentage\n4)HarmonicNumber\n5)PrimeFactorization");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
@@ -27,6 +27,10 @@ namespace BasicPrograms
                     case 4:
                         HarmonicNumber harmonic = new HarmonicNumber();
                         harmonic.harmonicNumber();
+                        break;
+                    case 5:
+                        PrimeFactorization factorization = new PrimeFactorization();
+                        factorization.primeFactors();
                         break;
                     default:
                         Console.WriteLine("Wrong Input");
