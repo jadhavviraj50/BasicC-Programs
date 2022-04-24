@@ -8,7 +8,7 @@ namespace BasicPrograms
             
             while(true)
             {
-                Console.WriteLine("Select Number\n1)Leap Year \n2)Even odd\n3)FlipCoinPercentage\n4)HarmonicNumber\n5)PrimeFactorization\n6)QuotientRemainder\n7)SwapNumbers\n8)Largestof3Number");
+                Console.WriteLine("Select Number\n1)Leap Year \n2)Even odd\n3)FlipCoinPercentage\n4)HarmonicNumber\n5)PrimeFactorization\n6)QuotientRemainder\n7)SwapNumbers\n8)Largestof3Number\n9)VowelConsonant");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
@@ -43,6 +43,10 @@ namespace BasicPrograms
                     case 8:
                         Largestof3 large = new Largestof3();
                         large.largest();
+                        break;
+                    case 9:
+                        VowelConsonant checkVowel = new VowelConsonant();
+                        checkVowel.vowel();
                         break;
                     default:
                         Console.WriteLine("Wrong Input");
