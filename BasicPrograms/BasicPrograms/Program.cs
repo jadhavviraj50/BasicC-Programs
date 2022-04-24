@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace BasicPrograms
 {
     class Program
@@ -9,7 +8,7 @@ namespace BasicPrograms
             
             while(true)
             {
-                Console.WriteLine("Select Number\n)Leap Year \n2)Even odd\n");
+                Console.WriteLine("Select Number\n1)Leap Year \n2)Even odd\n3)FlipCoinPercentage");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
@@ -20,6 +19,10 @@ namespace BasicPrograms
                     case 2:
                         EvenOdd even = new EvenOdd();
                         even.checkEvenOdd();
+                        break;
+                    case 3:
+                        FlipCoin coin = new FlipCoin();
+                        coin.flipCoinPercentage();
                         break;
                     default:
                         Console.WriteLine("Wrong Input");
