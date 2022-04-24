@@ -8,7 +8,7 @@ namespace BasicPrograms
             
             while(true)
             {
-                Console.WriteLine("Select Number\n1)Leap Year \n2)Even odd\n3)FlipCoinPercentage\n4)HarmonicNumber\n5)PrimeFactorization");
+                Console.WriteLine("Select Number\n1)Leap Year \n2)Even odd\n3)FlipCoinPercentage\n4)HarmonicNumber\n5)PrimeFactorization\n6)QuotientRemainder");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
@@ -31,6 +31,10 @@ namespace BasicPrograms
                     case 5:
                         PrimeFactorization factorization = new PrimeFactorization();
                         factorization.primeFactors();
+                        break;
+                    case 6:
+                        QuotientRemainder quotientRemainder = new QuotientRemainder();
+                        quotientRemainder.quotient();
                         break;
                     default:
                         Console.WriteLine("Wrong Input");
