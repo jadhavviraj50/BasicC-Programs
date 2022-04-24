@@ -6,8 +6,27 @@ namespace BasicPrograms
     {
         static void Main(string[] args)
         {
-            LeapYear leap = new LeapYear();
-            leap.checkLeapYear();
+            
+            while(true)
+            {
+                Console.WriteLine("Select Number\n)Leap Year \n2)Even odd\n");
+                int option = Convert.ToInt32(Console.ReadLine());
+                switch(option)
+                {
+                    case 1:
+                        LeapYear leap = new LeapYear();
+                        leap.checkLeapYear();
+                        break;
+                    case 2:
+                        EvenOdd even = new EvenOdd();
+                        even.checkEvenOdd();
+                        break;
+                    default:
+                        Console.WriteLine("Wrong Input");
+                        break;
+
+                }
+            }
         }
     }
 }
